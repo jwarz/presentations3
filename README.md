@@ -81,6 +81,14 @@ mv reveal.js/index.html presentations/date_name
 
 3. Modify paths inside `index.html`
 
+If not served from `https://username.github.io/` but from `https://username.github.io/repo/` the html base tag is needed to get the correct pathes. This line has to be added inside the <head> 
+
+```html
+<base href="/repo/">
+```
+
+
+
 * title
 
 ```html
