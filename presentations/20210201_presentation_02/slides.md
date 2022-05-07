@@ -102,7 +102,7 @@
 2020-02-11 | docsem | TU Hamburg
 
 
-[![alt text](img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
+[![alt text](../../img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
 
 
 [1]: https://www.startupengineer.io/authors/schwarz/
