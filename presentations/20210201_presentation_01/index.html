@@ -130,7 +130,7 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom, RevealSearch, RevealMath, RevealChalkboard, PdfExport ],
 
 				dependencies: [
-					{ src: 'plugin/Reveal.js-Title-Footer/plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(null ,null); } },
+					{ src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(null ,null); } },
 					{ src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize('scroll', null, 'body'); toc_progress.create(); } }],
 				menu: {
 				    side: 'left',
@@ -169,12 +169,12 @@
 				        {
 				           name: 'Dark',
 				           theme: 'css/dark.css',
-				           highlightTheme: '/css/dracula.css'
+				           highlightTheme: 'css/dracula.css'
 				        },
 				        {
 				           name: 'Bright',
 				           theme: 'css/bright.css',
-				           highlightTheme: '/css/github.css'
+				           highlightTheme: 'css/github.css'
 				        }
      				],
 				    themesPath: 'css/',
