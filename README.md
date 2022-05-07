@@ -31,6 +31,39 @@ touch .gitignore
 echo 'node_modules' >> .gitignore
 ```
 
+## Serve from markdown
+
+Replace
+
+```html
+<div class="reveal">
+    <div class="slides">
+        <section>Slide 1</section>
+        <section>Slide 2</section>
+    </div>
+</div>
+```
+
+with
+
+```html
+<div class="reveal">
+    <div class="slides">
+        <section data-markdown="slides.md"
+                    data-separator="^\n----  ----\n$"
+                    data-separator-vertical="^\n----\n$"
+                    data-separator-notes="^Note:"
+                    data-charset="utf-8">
+            <!--
+            Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+            For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+            -->
+        </section>
+    </div>
+</div>
+```
+
+
 ## Create presentation folder structure
 
 1. Create folder
@@ -93,6 +126,10 @@ mv reveal.js/index.html presentations/date_name
 
 1. CSS
 
+```
+mkdir css
+```
+
 2. Plugins
 
 Create folder
@@ -135,3 +172,26 @@ Add to html
 <script src="/plugin/reveal-pdfexport/pdfexport.js"></script>
 <script src="/plugin/chalkboard/screenfull.min.js"></script>
 ```
+
+Adjust `Reveal.initialize` function. Add plugins.
+ 
+```html
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom, RevealSearch, RevealMath, RevealChalkboard, PdfExport ],
+
+        dependencies: [
+            { src: 'plugin/Reveal.js-Title-Footer/plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(null ,null); } },
+            { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize('scroll', null, 'body'); toc_progress.create(); } }]
+    });
+</script>
+```
+
+Include settings as well (see /plugins/README.md) and stylesheets for plugins
+
