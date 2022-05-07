@@ -1,10 +1,14 @@
 body {
-  background-color: #22222f;
+  background-color: #272935;
   
 }
 
+h1 {
+  font-size: 3em;
+}
+
 h1, h2 {
-  color: white;
+  color: #98A6AD;
   font-family: 'News Cycle', sans-serif;
 }
 
@@ -15,8 +19,8 @@ h1, h2 {
 
 .post {
 
-  background-color:#272935;
-  color:white;
+  background-color:#23252F;
+  color:#98A6AD;
   font-family: 'News Cycle', sans-serif;
 
   width: 100%;
@@ -80,7 +84,6 @@ h1, h2 {
 }
 
 .post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
   text-decoration: none;
-  color: white;
+  color: #98A6AD
 }
