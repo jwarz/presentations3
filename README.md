@@ -48,6 +48,12 @@ mv reveal.js/index.html presentations/date_name
 
 3. Modify paths inside `index.html`
 
+* title
+
+```html
+<title>jwarz</title>
+```
+
 * Stylesheets
     ```html
     <link rel="stylesheet" href="/reveal.js/dist/reset.css">
@@ -81,3 +87,51 @@ mv reveal.js/index.html presentations/date_name
 		</ul>
 	</body>
 </html>
+```
+
+## Customize
+
+1. CSS
+
+2. Plugins
+
+Create folder
+
+```
+mkdir plugin
+```
+
+Add plugins
+
+As submodules
+
+```
+cd plugin
+git submodule add https://github.com/e-gor/Reveal.js-Title-Footer/
+git submodule add https://github.com/McShelby/reveal-pdfexport/
+git submodule add https://github.com/denehyg/reveal.js-menu/
+```
+
+Or manually (modified)
+
+* [Chalkboard](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard) by [rajgoel](https://github.com/rajgoel/)
+* [TOC-progress](https://github.com/e-gor/Reveal.js-TOC-Progress/) by [e-gor](https://github.com/e-gor/)
+
+Add to html
+
+```html
+<!-- Original -->
+<script src="/reveal.js/dist/reveal.js"></script>
+<script src="/reveal.js/plugin/notes/notes.js"></script>
+<script src="/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="/reveal.js/plugin/search/search.js"></script>
+<script src="/reveal.js/plugin/math/math.js"></script>
+
+<!-- Modified -->
+<script src="/plugin/reveal.js-menu/menu.js"></script>
+<script src="/plugin/chalkboard/plugin.js"></script>
+<script src="/plugin/reveal-pdfexport/pdfexport.js"></script>
+<script src="/plugin/chalkboard/screenfull.min.js"></script>
+```
