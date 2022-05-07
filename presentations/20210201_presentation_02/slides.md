@@ -20,7 +20,7 @@
 2020-01-20 | [MST-Research Seminar Series][2] | TU Hamburg
 
 
-[![alt text](../img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
+[![alt text](../../img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
 
 
 [1]: https://www.startupengineer.io/authors/ihl/
@@ -714,5 +714,5 @@
 </div>
 
 
-[![alt text](../img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
+[![alt text](../../img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
 
