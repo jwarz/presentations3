@@ -19,7 +19,8 @@ h1, h2 {
 
 .post {
 
-  background-color:#23252F;
+  /*background-color:#23252F;*/
+  background-color:rgba(255, 255, 255, 0.05);
   color:#98A6AD;
   font-family: 'News Cycle', sans-serif;
 
