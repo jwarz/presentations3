@@ -4,21 +4,20 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<base href="/presentations3/" />
 		<title>jwarz</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/dark.css" id="theme">
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/dark.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<!-- <link rel="stylesheet" href="reveal.js/plugin/highlight/dracula.css" id="highlight-theme"> -->
-		<link rel="stylesheet" href="css/dracula.css" id="highlight-theme">
+		<link rel="stylesheet" href="../../css/dracula.css" id="highlight-theme">
 
-		<link rel="stylesheet" href="css/title-footer.css">
+		<link rel="stylesheet" href="../../css/title-footer.css">
 
 		<!-- TOC-Progress plugin -->
-		<link rel="stylesheet" href="css/toc-progress.css">
+		<link rel="stylesheet" href="../../css/toc-progress.css">
 
 		<!-- chalkboard plugin -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -39,18 +38,18 @@
 			</div>
 		</div>
 
-		<script src="reveal.js/dist/reveal.js"></script>
-		<script src="reveal.js/plugin/notes/notes.js"></script>
-		<script src="reveal.js/plugin/markdown/markdown.js"></script>
-		<script src="reveal.js/plugin/highlight/highlight.js"></script>
-		<script src="reveal.js/plugin/zoom/zoom.js"></script>
-		<script src="reveal.js/plugin/search/search.js"></script>
-		<script src="reveal.js/plugin/math/math.js"></script>
+		<script src="../../reveal.js/dist/reveal.js"></script>
+		<script src="../../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../../reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="../../reveal.js/plugin/search/search.js"></script>
+		<script src="../../reveal.js/plugin/math/math.js"></script>
 
-		<script src="plugin/reveal.js-menu/menu.js"></script>
-		<script src="plugin/chalkboard/plugin.js"></script>
-		<script src="plugin/reveal-pdfexport/pdfexport.js"></script>
-		<script src="plugin/chalkboard/screenfull.min.js"></script>
+		<script src="../../plugin/reveal.js-menu/menu.js"></script>
+		<script src="../../plugin/chalkboard/plugin.js"></script>
+		<script src="../../plugin/reveal-pdfexport/pdfexport.js"></script>
+		<script src="../../plugin/chalkboard/screenfull.min.js"></script>
 
 		<script>
 			// More info about initialization & config:
@@ -95,7 +94,7 @@
 			        boardmarkerWidth: 3,
 			        chalkWidth: 3,
 			        chalkEffect: 0,
-			        src: "plugin/chalkboard/chalkboard.json",
+			        //src: "../../plugin/chalkboard/chalkboard.json",
 			        readOnly: undefined,
 			        fullscreenButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
 			        toggleChalkboardButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
@@ -130,8 +129,8 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealZoom, RevealSearch, RevealMath, RevealChalkboard, PdfExport ],
 
 				dependencies: [
-					{ src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(null ,null); } },
-					{ src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize('scroll', null, 'body'); toc_progress.create(); } }],
+					{ src: '../../plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(null ,null); } },
+					{ src: '../../plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize('scroll', null, 'body'); toc_progress.create(); } }],
 				menu: {
 				    side: 'left',
 				    width: 'normal',
@@ -168,16 +167,16 @@
 				    themes: [
 				        {
 				           name: 'Dark',
-				           theme: 'css/dark.css',
-				           highlightTheme: 'css/dracula.css'
+				           theme: '../../css/dark.css',
+				           highlightTheme: '../../css/dracula.css'
 				        },
 				        {
 				           name: 'Bright',
-				           theme: 'css/bright.css',
-				           highlightTheme: 'css/github.css'
+				           theme: '../../css/bright.css',
+				           highlightTheme: '../../css/github.css'
 				        }
      				],
-				    themesPath: 'css/',
+				    themesPath: '../../css/',
 				    transitions: true,
 				    openButton: true,
 				    openSlideNumber: false,

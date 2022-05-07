@@ -102,7 +102,7 @@
 2020-02-11 | docsem | TU Hamburg
 
 
-[![alt text](img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
+[![alt text](../../img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
 
 
 [1]: https://www.startupengineer.io/authors/schwarz/
@@ -702,7 +702,7 @@ al_profiles_joined %>%
         <!--- Slide container (TOP) --->
         <div class="slide-container-top vertical">
           <!--- IFrAME --->
-          <iframe src="coediting_network.html" width="100%" height="100%">asd</iframe>
+          <iframe src="assets/coediting_network.html" width="100%" height="100%">asd</iframe>
         </div>
         <!--- Slide container (BOTTOM / SPACING) --->
         <div class="slide-container-bottom"></div>
@@ -805,5 +805,5 @@ al_profiles_joined %>%
 </div>
 
 
-[![alt text](../img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
+[![alt text](../../img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
 
