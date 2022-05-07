@@ -1,5 +1,5 @@
 body {
-  background-color: #272935;
+  background-color: #22222f;
   
 }
 
@@ -15,7 +15,7 @@ h1, h2 {
 
 .post {
 
-  background-color:rgba(152,166,173,0.1);
+  background-color:#272935;
   color:white;
   font-family: 'News Cycle', sans-serif;
 
