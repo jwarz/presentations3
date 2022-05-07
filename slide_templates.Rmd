@@ -1,0 +1,102 @@
+### Three boxes rowwise
+
+<style>
+.box_outside {
+  display: flex;
+  height:52vh;
+  width:100%;
+}
+
+.box_inside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height:100%;
+  margin-left:20px;
+}
+</style>
+<div class="box_outside" style="background-color:yellow;">
+  <div class="box_inside" style="background-color:green;"></div>
+  <div class="box_inside" style="background-color:red;"></div>
+  <div class="box_inside" style="background-color:blue;"></div>
+</div>
+
+
+
+### Two boxes row two column
+<style>
+/*Slide Container*/
+.slide-container-2 {
+    width:     100%;
+    height:    100%;
+    display:   flex;
+    flex-wrap: wrap; /*line break the boxes*/
+}
+/*Settings for divisions inside of container*/
+.slide-container-2>* {
+        flex: 1 1 45%; /*grow shrink basis*/
+}
+/*Gap between every other box*/
+.slide-container-2>* + *  { 
+        margin-left: 20px;
+}
+/*Settings for top boxes*/
+.slide-container-2-top {
+    border: 2px solid grey;
+    height:80%;
+}
+/*Settings for bottom boxes*/
+.slide-container-2-bottom {
+    background-color:red; 
+    height:20%;
+}
+/*Settings for Inside (Text) boxes*/
+.box-text {
+  padding:20px;
+}
+/*Settings for Lists*/
+.square-list {
+  list-style: square !important;
+}
+/*Settings for Image in Box*/
+.box-img {
+  margin: 10px;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+</style>
+
+<div class="slide-container-2">
+        <!--- Box No. 1 (Left) --->
+        <div class="slide-container-2-top">
+            <!--- IMAGE --->
+            <div class="box-img" style="background-image: url(img/apple_annotated.png)"></div>
+        </div>
+        <!--- Box No. 2 (Left) --->
+        <div class="slide-container-2-top"">
+            <!--- TEXT --->
+            <div class="box-text">
+              <!--- List (unordered) --->
+              <ul class="square-list">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+        </div>
+        <!--- Space Holder Box --->
+        <div class="slide-container-2-bottom">Three</div>
+</div>
+
+
+----
+#imgtest {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
