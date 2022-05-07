@@ -1,8 +1,9 @@
 body {
   background-color: #272935;
+  
 }
 
-h1, ul, li {
+h1, h2 {
   color: white;
   font-family: 'News Cycle', sans-serif;
 }
@@ -14,7 +15,9 @@ h1, ul, li {
 
 .post {
 
-  /*background-color: aquamarine;*/
+  background-color:rgba(152,166,173,0.1);
+  color:white;
+  font-family: 'News Cycle', sans-serif;
 
   width: 100%;
   max-width: 100%;
@@ -79,5 +82,5 @@ h1, ul, li {
 .post .post-content .post-title a {
   font-family: 'PT Serif', serif;
   text-decoration: none;
-  color: #263959;
+  color: white;
 }
