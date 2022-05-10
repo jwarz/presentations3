@@ -1,10 +1,16 @@
 # Presentations
 
+All presentations are created using the [reveal.js](https://revealjs.com) framework and can be found here:
+
+[jwarz.github.io/presentations/](jwarz.github.io/presentations/)
+
 # Code
 
-## To run it locally
+To recreate this setup do the following steps:
 
-1. Add `reveal.js` code
+## Installation (including a local web server)
+
+1. Add `reveal.js` to your repo
  
 ```
 git submodule add https://github.com/hakimel/reveal.js/
@@ -31,9 +37,11 @@ touch .gitignore
 echo 'node_modules' >> .gitignore
 ```
 
-## Serve from markdown
+## Serve presentations from external markdown files
 
-Replace
+It's possible and often times more convenient to write presentation content using Markdown. You can write your content as a separate file and have reveal.js load it at runtime.
+
+Inside the `index.html` replace
 
 ```html
 <div class="reveal">
@@ -63,8 +71,9 @@ with
 </div>
 ```
 
-
 ## Create presentation folder structure
+
+It is convenient to store all presentation inside one folder.
 
 1. Create folder
 
@@ -73,7 +82,7 @@ mkdir presentations
 mkdir presentations/date_name
 ```
 
-2. Move html file
+2. Move `index.html` (and `slides.md`)
 
 ```
 mv reveal.js/index.html presentations/date_name
@@ -81,36 +90,30 @@ mv reveal.js/index.html presentations/date_name
 
 3. Modify paths inside `index.html`
 
-If not served from `https://username.github.io/` but from `https://username.github.io/repo/` the html base tag is needed to get the correct pathes. This line has to be added inside the <head> 
+If not served from `https://username.github.io/` but from `https://username.github.io/repo/` the html base tag is needed to have the proper file pathes. This line has to be added inside the <head> 
 
 ```html
-<base href="/repo/">
+<base href="/repo_name/">
 ```
 
-
-
-* title
-
-```html
-<title>jwarz</title>
-```
+Alternatively, point point to tge root folder two levels up from the current folder:
 
 * Stylesheets
     ```html
-    <link rel="stylesheet" href="/reveal.js/dist/reset.css">
-	<link rel="stylesheet" href="/reveal.js/dist/reveal.css">
-	<link rel="stylesheet" href="/dreveal.js/ist/theme/black.css">
+    <link rel="stylesheet" href="../../reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="../../reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="../../dreveal.js/ist/theme/black.css">
 
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="../../reveal.js/plugin/highlight/monokai.css">
     ```
 
 * Plugins
     ```html
-    <script src="/reveal.js/dist/reveal.js"></script>
-    <script src="/reveal.js/plugin/notes/notes.js"></script>
-    <script src="/reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../../reveal.js/dist/reveal.js"></script>
+    <script src="../../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../../reveal.js/plugin/highlight/highlight.js"></script>
     ```
 
 4. Add `index.html` at root to list and link all presentations. Simple example:
@@ -130,23 +133,16 @@ If not served from `https://username.github.io/` but from `https://username.gith
 </html>
 ```
 
-## Customize
+## Customize presentations
 
-1. CSS
+1. Create folder for CSS files and plugins
 
 ```
 mkdir css
-```
-
-2. Plugins
-
-Create folder
-
-```
 mkdir plugin
 ```
 
-Add plugins
+2. Add plugins
 
 As submodules
 
@@ -162,26 +158,26 @@ Or manually (modified)
 * [Chalkboard](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard) by [rajgoel](https://github.com/rajgoel/)
 * [TOC-progress](https://github.com/e-gor/Reveal.js-TOC-Progress/) by [e-gor](https://github.com/e-gor/)
 
-Add to html
+3. Add plugin pathes to `index.html`
 
 ```html
 <!-- Original -->
-<script src="/reveal.js/dist/reveal.js"></script>
-<script src="/reveal.js/plugin/notes/notes.js"></script>
-<script src="/reveal.js/plugin/markdown/markdown.js"></script>
-<script src="/reveal.js/plugin/highlight/highlight.js"></script>
-<script src="/reveal.js/plugin/zoom/zoom.js"></script>
-<script src="/reveal.js/plugin/search/search.js"></script>
-<script src="/reveal.js/plugin/math/math.js"></script>
+<script src="../../reveal.js/dist/reveal.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<script src="../../reveal.js/plugin/highlight/highlight.js"></script>
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/math/math.js"></script>
 
 <!-- Modified -->
-<script src="/plugin/reveal.js-menu/menu.js"></script>
-<script src="/plugin/chalkboard/plugin.js"></script>
-<script src="/plugin/reveal-pdfexport/pdfexport.js"></script>
-<script src="/plugin/chalkboard/screenfull.min.js"></script>
+<script src="../../plugin/reveal.js-menu/menu.js"></script>
+<script src="../../plugin/chalkboard/plugin.js"></script>
+<script src="../../plugin/reveal-pdfexport/pdfexport.js"></script>
+<script src="../../plugin/chalkboard/screenfull.min.js"></script>
 ```
 
-Adjust `Reveal.initialize` function. Add plugins.
+4. Add plugins to the `Reveal.initialize` function inside `index.html`
  
 ```html
 <script>
@@ -202,4 +198,3 @@ Adjust `Reveal.initialize` function. Add plugins.
 ```
 
 Include settings as well (see /plugins/README.md) and stylesheets for plugins
-
