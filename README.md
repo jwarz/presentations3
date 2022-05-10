@@ -2,7 +2,7 @@
 
 All presentations are created using the [reveal.js](https://revealjs.com) framework and can be found here:
 
-jwarz.github.io/presentations/
+[jwarz.github.io/presentations/](https://jwarz.github.io/presentations/)
 
 # Code
 
