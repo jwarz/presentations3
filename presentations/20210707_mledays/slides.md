@@ -94,7 +94,7 @@
 
 <br> 
 
-[Joschka Schwarz][1] - [Christoph Ihl][2]
+[Joschka Schwarz][1]
 
 <br> 
 
@@ -104,7 +104,6 @@
 
 
 [1]: https://www.startupengineer.io/authors/schwarz/
-[2]: https://www.startupengineer.io/authors/ihl/
 <!-- [2]: https://www.tuhh.de/alt/sdw -->
 
 
