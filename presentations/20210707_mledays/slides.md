@@ -90,7 +90,7 @@
 <!-- .element: class="no-toc-progress" --> <!-- slide not in toc progress bar -->
 
 
-<h2 style="text-align: center;">Maschinelles Lernen mit Graphen</h2>
+<h2 style="text-align: center;">Machine Learning with Graphs</h2>
 
 <br> 
 
@@ -619,7 +619,7 @@ A way of constructing a pretty broad class of traceable functions on graphs is u
 
 <!-- .slide: class="align-center" -->
 
-# Beispiele
+# Why convolutions?
 
 ###  Wie können wir neuronale Netze entwickeln, die viel breiter einsetzbar sind?
 
@@ -834,7 +834,30 @@ A way of constructing a pretty broad class of traceable functions on graphs is u
 
 <!-- .slide: class="align-center" -->
 
-# NOT used
+# Defining graph convolution
+
+### backup
+
+<span style="display: inline;"></span>
+
+
+----
+
+<!-- .slide: class="align-center" -->
+
+# Building the full neural network
+
+### backup
+
+<span style="display: inline;"></span>
+
+
+----
+
+
+<!-- .slide: class="align-center" -->
+
+# Conclusions
 
 ### backup
 
