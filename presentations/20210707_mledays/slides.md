@@ -86,22 +86,27 @@
   
   <!-- .slide: data-state="no-toc-progress" --> <!-- don't show toc progress bar on this slide -->
 
-# Machine Learning with Graphs
+# Geometric Deep Learning
 <!-- .element: class="no-toc-progress" --> <!-- slide not in toc progress bar -->
 
 
-<br> 
-
-[Joschka Schwarz][1]
+<h2 style="text-align: center;">Machine Learning with Graphs</h2>
 
 <br> 
 
+[Joschka Schwarz][1] - [Christoph Ihl][2]
+
+<br> 
+
+
+MLE-Days 2022 | TU Hamburg
 
 
 [![alt text](img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
 
 
 [1]: https://www.startupengineer.io/authors/schwarz/
+[2]: https://www.startupengineer.io/authors/ihl/
 <!-- [2]: https://www.tuhh.de/alt/sdw -->
 
 
