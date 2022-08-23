@@ -545,20 +545,12 @@ A way of constructing a pretty broad class of traceable functions on graphs is u
 
 <!-- .slide: class="align-top" -->
 
-#### Graph, Node features, Edge features
-
-*image of graph with nodes, edges, notation, ...*
-Map nodes to d-dimensional embeddings such that similar nodes in the network are embedded close together
+#### Alternative approach to deep learning models: Sample-Ensemble Genetic Evolutional Network
 
 <div class="slide-container">
         <div class="slide-container">
         <!--- Slide container (TOP) --->
         <div class="slide-container-top vertical">
-        <div class="slide-box" style="flex:0 0 15%">
-        <p>Aim: Map nodes/graphs into an embedding space, in which they can be distinguished for a given task<p>
-        <p>Graph, Node features, edge features --> similar to Node2Vec & Graph Kernels. A Graph Neural Network updates node
- representations by repeatedly transforming and aggregating neighboring node representations<p>
-        </div>
           <!--- Content Box (1) --->
           <div class="slide-box">
             <!--- IMAGE --->
