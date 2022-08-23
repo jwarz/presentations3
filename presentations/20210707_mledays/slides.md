@@ -90,7 +90,7 @@
 <!-- .element: class="no-toc-progress" --> <!-- slide not in toc progress bar -->
 
 
-<h2 style="text-align: center;">Machine Learning with Graphs</h2>
+<h3 style="text-align: center;">Machine Learning with Graphs</h3>
 
 <br> 
 
@@ -99,7 +99,7 @@
 <br> 
 
 
-MLE-Days 2022 | TU Hamburg
+MLE-Days 2022
 
 
 [![alt text](img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
