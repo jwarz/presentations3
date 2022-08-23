@@ -86,7 +86,7 @@
   
   <!-- .slide: data-state="no-toc-progress" --> <!-- don't show toc progress bar on this slide -->
 
-# MLE-Days 2021
+# MLE-Days 2022
 <!-- .element: class="no-toc-progress" --> <!-- slide not in toc progress bar -->
 
 
@@ -94,20 +94,17 @@
 
 <br> 
 
-[Christoph Ihl][1] - [Joschka Schwarz][2] - [Oliver Mork][3]
+[Joschka Schwarz][1] - [Christoph Ihl][2]
 
 <br> 
 
-
-2021-07-01 | MLE-Days | TU Hamburg
 
 
 [![alt text](img/logo.png)](https://www.startupengineer.io) <!-- .element: class="logo" -->
 
 
-[1]: https://www.startupengineer.io/authors/ihl/
-[2]: https://www.startupengineer.io/authors/schwarz/
-[3]: https://www.startupengineer.io/authors/mork/
+[1]: https://www.startupengineer.io/authors/schwarz/
+[2]: https://www.startupengineer.io/authors/ihl/
 <!-- [2]: https://www.tuhh.de/alt/sdw -->
 
 
@@ -545,7 +542,7 @@ A way of constructing a pretty broad class of traceable functions on graphs is u
 
 <!-- .slide: class="align-top" -->
 
-#### Alternative approach to deep learning models: Sample-Ensemble Genetic Evolutional Network
+#### Alternative approach to deep learning models:\nSample-Ensemble Genetic Evolutional Network
 
 <div class="slide-container">
         <div class="slide-container">
