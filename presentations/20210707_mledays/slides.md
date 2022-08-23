@@ -86,11 +86,9 @@
   
   <!-- .slide: data-state="no-toc-progress" --> <!-- don't show toc progress bar on this slide -->
 
-# MLE-Days 2022
+# Machine Learning with Graphs
 <!-- .element: class="no-toc-progress" --> <!-- slide not in toc progress bar -->
 
-
-<h2 style="text-align: center;">Machine Learning with Graphs</h2>
 
 <br> 
 
