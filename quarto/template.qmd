@@ -1,17 +1,17 @@
 ---
 title: "Business Data Science Basics"
-#subtitle: <font size='6'>Intro to R</font>
-title-slide-attributes:
-    data-background-image: "images/logo.svg"
-    data-background-position: 50% 85%
-    data-background-size: 10em auto
+subtitle: <font size='6'>Intro to R</font>
+#title-slide-attributes:
+#    data-background-image: "images/logo.svg"
+#    data-background-position: right 10px bottom 10px
+#    data-background-size: 10em auto
 author: "Joschka Schwarz"
 institute: "TUHH"
 date: today
-date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
+date-format: "[<font size='6'>]dddd, D[<sup style='font-size:65%;font-style:italic;'>st</sup>] [of] MMMM YYYY[</font>]"
 format: 
   revealjs:
-    slide-number: c
+    slide-number: c/t
     footer: "Business Data Science Basics"
     logo: images/logo.svg
     include-in-header: favicon.html
@@ -54,7 +54,7 @@ execute:
 
 # What is R?
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 1 [2 3 4 5 6]{style="opacity:0.25"}
 :::
@@ -64,7 +64,7 @@ execute:
 
 ## What is R?
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 1 [2 3 4 5 6]{style="opacity:0.25"}
 :::
