@@ -10,6 +10,13 @@ $code-block-border-color: #000000;
 
 /*-- scss:rules --*/
 
+// Fonts
+
+@font-face {
+  font-family: 'PublicaSans-Regular';
+  src: url('PublicaSans-Regular.otf') format("opentype");
+}
+
 #title-slide {
 
  text-align: left;
@@ -26,6 +33,7 @@ $code-block-border-color: #000000;
 }
 
 #title-slide .institute {
+  font-family:'PublicaSans-Regular';
   font-style: italic;
   font-size: 80%;
 }
@@ -82,10 +90,9 @@ $code-block-border-color: #000000;
   color: $presentation-heading-color;
   font-family: $presentation-heading-font;
   background-color: $body-bg;
-  margin: 1px;
-  padding: 2px 2px 2px 2px;
-  width: 120px;
-  border-left: 10px solid;
+  padding-left: 20px;
+  width: 8rem;
+  border-left: 3px solid;
 }
 
 .blackbox {

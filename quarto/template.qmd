@@ -12,17 +12,22 @@ date-format: "[<font size='6'>]dddd, D[<sup style='font-size:65%;font-style:ital
 format: 
   revealjs:
     slide-number: c/t
-    footer: "Business Data Science Basics"
+    #footer: "Business Data Science Basics"
     logo: images/logo.svg
     include-in-header: favicon.html
     theme: [dark, custom.scss]
     highlight-style: github
     preview-links: auto
     chalkboard: 
+      buttons: true
       boardmarker-width: 5
+    #revealjs-plugins:
+    # - title_footer
+    mainfont: "PublicaSans-Regular"
 from: markdown+emoji
 execute:
   echo: true
+controls: true
 ---
 
 ## Agenda
@@ -35,6 +40,10 @@ execute:
 - Break :clock9:
 - By the end of today :heavy_check_mark:
 - Today's plan :clipboard:
+:::
+
+::: footer
+Business Data Science | Joschka Schwarz
 :::
 
 ---
@@ -56,7 +65,7 @@ execute:
 
 ::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -66,7 +75,7 @@ execute:
 
 ::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -83,9 +92,9 @@ R is an open-source ([**free**]{style="color:#cc0000"}!) scripting language for 
 
 ## The benefits of R
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -111,9 +120,9 @@ Keeps data separate from code (data preparation steps)
 
 ## Getting R
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -133,9 +142,9 @@ And also the [software](https://www.rstudio.com/products/rstudio/download/#downl
 
 ## Navigating RStudio
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -171,9 +180,9 @@ code *can* go here
 
 ## Navigating RStudio
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -205,9 +214,9 @@ code can also<br>go here
 
 ## Using R
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -237,9 +246,9 @@ You use R via *packages*
 
 ## Today's data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -268,9 +277,9 @@ knitr::kable(faculty %>% head(6))
 
 ## Today's data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-1 [2 3 4 5 6]{style="opacity:0.25"}
+1 [2 3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -287,11 +296,11 @@ knitr::kable(courses %>% head(6))
 ```
 :::
 
-# Basic data manipulation
+# Basic data <br> manipulation
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -299,9 +308,9 @@ knitr::kable(courses %>% head(6))
 
 ## Useful operators
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -354,9 +363,9 @@ knitr::kable(courses %>% head(6))
 
 ## Common functions
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -382,9 +391,9 @@ knitr::kable(courses %>% head(6))
 
 ## Syntax of a function
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -410,9 +419,9 @@ is the same as
 
 ## Filter
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -449,9 +458,9 @@ knitr::kable(faculty %>% filter(dept1 == "Sociology") %>% head(6))
 
 ## Filter
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -487,9 +496,9 @@ knitr::kable(faculty %>% filter(dept1 == "Sociology" | dept1 == "Physics") %>% h
 
 ## Filter
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -526,9 +535,9 @@ knitr::kable(faculty %>% filter(dept1 %in% c("Sociology","Physics","Music")) %>%
 
 ## Filter
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -566,9 +575,9 @@ knitr::kable(faculty %>% filter(dept1 %in% c("Sociology","Physics","Music") & ra
 
 ## Select
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -603,9 +612,9 @@ knitr::kable(faculty %>% select(id, dept1, rank) %>% head(6))
 
 ## Select
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -640,9 +649,9 @@ knitr::kable(faculty %>% select(-dept2) %>% head(6))
 
 ## Select
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -678,9 +687,9 @@ knitr::kable(faculty %>% select(id, dept1, rank) %>% filter(rank == "Professor")
 
 ## Arrange
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -717,9 +726,9 @@ knitr::kable(courses %>% arrange(desc(enrollment)) %>% head(6))
 
 ## Arrange
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -754,9 +763,9 @@ knitr::kable(courses %>% arrange(dept, desc(enrollment)) %>% head(6))
 
 ## Count
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -791,9 +800,9 @@ knitr::kable(courses %>% count(dept) %>% head(6))
 
 ## Count
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -828,9 +837,9 @@ knitr::kable(courses %>% count(dept, level, sort = TRUE))
 
 ## Mutate
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -865,9 +874,9 @@ knitr::kable(faculty %>% mutate(new = "hello!") %>% head(6))
 
 ## Mutate
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -907,9 +916,9 @@ knitr::kable(faculty %>% mutate(prof = ifelse(rank == "Professor",
 
 ## Mutate
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -950,9 +959,9 @@ knitr::kable(faculty %>% mutate(joint = ifelse(!is.na(dept2),
 
 ## Mutate
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -991,9 +1000,9 @@ knitr::kable(faculty %>% mutate(division = case_when(dept1 %in% c("Sociology","P
 
 ## Group by / summarize
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1033,9 +1042,9 @@ knitr::kable(courses %>%
 
 ## Group by / summarize
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1075,9 +1084,9 @@ knitr::kable(courses %>%
 
 # Using R effectively
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1085,9 +1094,9 @@ knitr::kable(courses %>%
 
 ## Working in RStudio
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1119,9 +1128,9 @@ code can also<br>go here
 
 ## Working in RStudio
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1153,9 +1162,9 @@ code can also<br>go here
 
 ## Working with packages
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1189,9 +1198,9 @@ can access help files by typing `??tidyverse` or `??mutate` in the console
 
 ## Organizing with projects
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1217,9 +1226,9 @@ more guidance: [here](https://support.rstudio.com/hc/en-us/articles/200526207-Us
 
 ## Organizing with projects
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1251,9 +1260,9 @@ code can also<br>go here
 
 ## Accessing workshop materials
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1271,9 +1280,9 @@ click big green Code button and select "Download ZIP", then open `neair.Rproj`
 
 ## Accessing data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4]{style="opacity:0.25"}
 :::
 :::
 
@@ -1305,11 +1314,11 @@ faculty <- read_excel("faculty.xlsx", sheet = 2)
 view the data with `View(faculty)` or by clicking on the data name in the Environment pane
 :::
 
-# More data manipulation
+# More data<br>manipulation
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1317,9 +1326,9 @@ view the data with `View(faculty)` or by clicking on the data name in the Enviro
 
 ## Stringr functions
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1353,9 +1362,9 @@ knitr::kable(faculty %>%
 
 ## Stringr functions
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1397,9 +1406,9 @@ knitr::kable(courses %>%
 
 ## Pivoting data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1418,9 +1427,9 @@ knitr::kable(faculty %>% head(6))
 
 ## Pivoting data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1443,9 +1452,9 @@ knitr::kable(faculty %>%
 
 ## Pivoting data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1489,9 +1498,9 @@ knitr::kable(faculty %>%
 
 ## Pivoting data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1530,9 +1539,9 @@ knitr::kable(courses %>%
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1552,9 +1561,9 @@ all you need is at least one [key variable]{style="color: #cc0000"} that connect
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1594,9 +1603,9 @@ knitr::kable(courses %>% head(4))
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1623,9 +1632,9 @@ knitr::kable(courses %>% head(5))
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1647,9 +1656,9 @@ courses_UG <- courses %>%
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1671,9 +1680,9 @@ courses_UG <- courses %>%
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1707,9 +1716,9 @@ knitr::kable(courses_UG %>% head(4))
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1759,9 +1768,9 @@ knitr::kable(courses_UG %>% arrange(desc(year)) %>% head(6))
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1802,9 +1811,9 @@ knitr::kable(fac_enr %>% head(6))
 
 ## Joining data
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6]{style="opacity:0.25"}
+[1 2 3]{style="opacity:0.25"} 4
 :::
 :::
 
@@ -1834,7 +1843,7 @@ knitr::kable(fac_enr %>% arrange(desc(year)) %>% head(6))
 
 # Data visualization
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
@@ -1842,7 +1851,7 @@ knitr::kable(fac_enr %>% arrange(desc(year)) %>% head(6))
 
 ## ggplot2
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
@@ -1866,7 +1875,7 @@ encoding data into visual cues (e.g., length, color, position, size) is how we s
 
 ## Bar chart
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
@@ -1901,7 +1910,7 @@ faculty %>%
 
 ## Bar chart
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
@@ -1930,7 +1939,7 @@ faculty %>%
 
 ## Line graph
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
@@ -1963,7 +1972,7 @@ fac_enr %>%
 
 ## Line graph
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
@@ -1994,7 +2003,7 @@ fac_enr %>%
 
 ## ggplot2 resources
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
@@ -2022,7 +2031,7 @@ the [R graph gallery](https://r-graph-gallery.com/index.html)
 
 ## Putting it all together
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
@@ -2046,7 +2055,7 @@ with what we've done so far, your `.R` file could:
 
 # Advanced topics
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4 5]{style="opacity:0.25"} 6
 :::
@@ -2054,7 +2063,7 @@ with what we've done so far, your `.R` file could:
 
 ## R Markdown
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4 5]{style="opacity:0.25"} 6
 :::
@@ -2080,7 +2089,7 @@ exceedingly useful for [parameterized reporting]{style="color:#cc0000"}: can cre
 
 ## Internal packages
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4 5]{style="opacity:0.25"} 6
 :::
@@ -2110,7 +2119,7 @@ can be stored on a shared drive to facilitate collaboration
 
 ## R Markdown and package resources
 
-::: {.absolute top="0" left="100%"}
+::: {.absolute top="0" right="0"}
 ::: {.sectionhead}
 [1 2 3 4 5]{style="opacity:0.25"} 6
 :::

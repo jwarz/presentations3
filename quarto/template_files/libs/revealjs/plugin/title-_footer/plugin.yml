@@ -1,0 +1,5 @@
+name: title_footer
+stylesheet: "title-footer.css"
+script: title-footer.js
+async: true
+callback: function() { title_footer.initialize(); }
