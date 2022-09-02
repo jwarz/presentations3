@@ -6,9 +6,9 @@ subtitle: <font size='6'>Intro to R</font>
 #    data-background-position: right 10px bottom 10px
 #    data-background-size: 10em auto
 author: "Joschka Schwarz"
-institute: "TUHH"
+institute: "Hamburg University of Technology"
 date: today
-date-format: "[<font size='6'>]dddd, D[<sup style='font-size:65%;font-style:italic;'>st</sup>] [of] MMMM YYYY[</font>]"
+date-format: "dddd, D[<sup style='font-size:65%;font-style:italic;'>st</sup>] [of] MMMM YYYY"
 format: 
   revealjs:
     slide-number: c/t
@@ -23,7 +23,7 @@ format:
       boardmarker-width: 5
     #revealjs-plugins:
     # - title_footer
-    mainfont: "PublicaSans-Regular"
+    mainfont: "PublicaSans-Light"
 from: markdown+emoji
 execute:
   echo: true

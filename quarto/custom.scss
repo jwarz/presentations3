@@ -1,25 +1,47 @@
 /*-- scss:defaults --*/
 
-$body-bg: #272935;
-$body-color: #98A6AD;
-$link-color: #2dc6d6;
-$presentation-heading-color: #2dc6d6;
-$code-color: #2dc6d6;
-$code-block-bg: #444758;
-$code-block-border-color: #000000;
-
-/*-- scss:rules --*/
-
 // Fonts
+
+@font-face {
+  font-family: 'PublicaSans-Light';
+  src: url('PublicaSans-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'PublicaSans-Thin';
+  src: url('PublicaSans-Thin.otf') format("opentype");
+}
 
 @font-face {
   font-family: 'PublicaSans-Regular';
   src: url('PublicaSans-Regular.otf') format("opentype");
 }
 
+$font-family-sans-serif: 'PublicaSans-Light' !default;
+
+// colors
+$body-bg: #272935 !default;
+$body-color: #98A6AD !default;
+$link-color: #2dc6d6 !default;
+
+// headings
+$presentation-heading-font: 'PublicaSans-Regular';
+$presentation-heading-color: #2dc6d6;
+
+
+
+$code-color: #2dc6d6;
+$code-block-bg: #444758;
+$code-block-border-color: #000000;
+
+/*-- scss:rules --*/
+
+
+$presentation-title-slide-text-align: left;
+
 #title-slide {
 
- text-align: left;
+ // text-align: left;
  background-image: url("https://raw.githubusercontent.com/jwarz/presentations/main/quarto/images/logo.svg");
  background-position: right bottom; /*Positioning*/
  background-size: 10em auto;
@@ -32,10 +54,9 @@ $code-block-border-color: #000000;
 
 }
 
-#title-slide .institute {
-  font-family:'PublicaSans-Regular';
+#title-slide .institute, #title-slide .author, #title-slide .date {
   font-style: italic;
-  font-size: 80%;
+  font-size: 70%;
 }
 
 #title-slide .author {
