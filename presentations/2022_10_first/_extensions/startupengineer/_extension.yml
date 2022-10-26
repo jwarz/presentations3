@@ -4,8 +4,8 @@ institute: "YOUR ORGANIZATION"
 contributes:
   formats:
     revealjs:
-      filters: [copy-resources.lua] # This is so resources get copied
-      theme: [dark, /presentations/css/theme.scss]
+      # filters: [copy-resources.lua] This is so resources get copied
+      theme: [dark, ../../../../css/theme.scss]
       format-resources:
         - logo.svg
         # - logo.png
