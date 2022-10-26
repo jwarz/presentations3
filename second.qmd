@@ -1,6 +1,6 @@
 ---
 # TITLE & AUTHOR
-title: "First"
+title: "Second"
 subtitle: "Create beautiful interactive slide decks with Reveal.js"
 author: "Joschka Schwarz"
 institute: "Hamburg University of Technology"
@@ -9,6 +9,7 @@ date-format: "dddd, D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [o
 # FORMAT OPTIONS
 format: 
   startupengineer-revealjs:
+    self-contained: true
     width: 1600
     height: 900
     footer: "Quarto Presentations"
@@ -18,7 +19,7 @@ format:
 
 Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
-![Lufthansa Technik](presentations/second/lht.svg){fig-align="center"}
+![Airbus](presentations/first/airbus.svg){fig-align="center"}
 
 ## Bullets
 
