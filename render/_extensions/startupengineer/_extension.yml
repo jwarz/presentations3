@@ -9,7 +9,7 @@ contributes:
       format-resources:
         - logo.svg
         # - logo.png
-      logo: "/render/_extensions/startupengineer/src/assets/images/logo.svg"
+      logo: "/presentations/render/_extensions/startupengineer/src/assets/images/logo.svg"
       title-slide-attributes:
         data-background-color: "#272935"
         # data-background-image: "images/logo.svg"
